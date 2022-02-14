@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:poke_api/poke_controller.dart';
+import 'package:poke_api/controller/poke_controller.dart';
 
-import 'pokemon.dart';
+import '../model/pokemon.dart';
 
 class PokeView extends StatefulWidget {
   const PokeView({Key key}) : super(key: key);

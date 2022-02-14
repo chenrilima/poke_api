@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import 'pokemon.dart';
+import '../model/pokemon.dart';
 
 class Api {
   Future<Pokemon> fetchPokemon(int number) async {

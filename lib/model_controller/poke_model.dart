@@ -1,5 +1,5 @@
-import 'api.dart';
-import 'pokemon.dart';
+import '../repositories/api.dart';
+import '../model/pokemon.dart';
 
 class PokeModel {
   Future<Pokemon> _pokemon;
