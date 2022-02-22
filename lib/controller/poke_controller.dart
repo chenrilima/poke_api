@@ -1,7 +1,5 @@
 import 'dart:math';
 
-
-
 import 'package:poke_api/dto/poke_model.dart';
 
 import '../model/pokemon.dart';

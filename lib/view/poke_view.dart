@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:poke_api/controller/poke_controller.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 import '../model/pokemon.dart';
 
 class PokeView extends StatefulWidget {
@@ -38,7 +37,7 @@ class _PokeViewState extends State<PokeView> {
                   ),
                   Text(
                     snapshot.data.nome,
-                    style:  TextStyle(
+                    style: TextStyle(
                       fontSize: 25.sp,
                       color: Colors.black,
                     ),
@@ -47,7 +46,7 @@ class _PokeViewState extends State<PokeView> {
               );
             } else if (snapshot.hasError) {
               return Text(snapshot.error,
-                  style:  TextStyle(fontSize: 18.sp, color: Colors.red));
+                  style: TextStyle(fontSize: 18.sp, color: Colors.red));
             }
             return const SizedBox.shrink();
           },
