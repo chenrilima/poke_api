@@ -1,12 +1,12 @@
 import 'dart:math';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:poke_api/dto/poke_model.dart';
+import 'package:poke_api/dto/poke_dto.dart';
 
 void main() {
   test('Receiving all Pokémons', () {
     // preparation
-    final model = PokeModel();
+    final model = PokeDto();
 
     // test - method
     model.fetchPokemon(Random().nextInt(1000));

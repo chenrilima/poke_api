@@ -1,11 +1,12 @@
 import 'dart:math';
 
-import 'package:poke_api/dto/poke_model.dart';
+
+import 'package:poke_api/dto/poke_dto.dart';
 
 import '../model/pokemon.dart';
 
 class PokeController {
-  final model = PokeModel();
+  final model = PokeDto();
 
   Future<Pokemon> get pokemon => model.pokemon;
 

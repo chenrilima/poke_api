@@ -1,7 +1,7 @@
 import '../repositories/api.dart';
 import '../model/pokemon.dart';
 
-class PokeModel {
+class PokeDto {
   Future<Pokemon> _pokemon;
 
   Future<Pokemon> get pokemon => _pokemon;
