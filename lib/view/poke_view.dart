@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:poke_api/controller/poke_controller.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 
 import '../model/pokemon.dart';
 
@@ -31,13 +33,13 @@ class _PokeViewState extends State<PokeView> {
                 children: [
                   Image.network(
                     snapshot.data.urlImage,
-                    height: 200,
+                    height: 200.h,
                     fit: BoxFit.cover,
                   ),
                   Text(
                     snapshot.data.nome,
-                    style: const TextStyle(
-                      fontSize: 25,
+                    style:  TextStyle(
+                      fontSize: 25.sp,
                       color: Colors.black,
                     ),
                   ),
@@ -45,7 +47,7 @@ class _PokeViewState extends State<PokeView> {
               );
             } else if (snapshot.hasError) {
               return Text(snapshot.error,
-                  style: const TextStyle(fontSize: 18, color: Colors.red));
+                  style:  TextStyle(fontSize: 18.sp, color: Colors.red));
             }
             return const SizedBox.shrink();
           },
